@@ -1,0 +1,27 @@
+"TRACK" ("/msg $O TRACK <+/-type|all|none>",
+        "This specifies what will be tracked in the tracking channel.",
+        "Use + to add flags and - to remove types. Use ALL to enable all",
+        "tracking options available, use NONE to completly disable them.",
+        "Available flags are:",
+        "auth  - Auths",
+        "chanmode - Channel Modes",
+        "del   - Quits",
+        "join  - Joins",
+        "kick  - Kicks",
+        "new   - New Nicks",
+        "nick  - Nick Changes",
+        "part  - Parts",
+        "umode - Umodes");
+
+"ADDTRACK" ("/msg $O ADDTRACK <nick>",
+        "Adds the given <nick> to the tracking list.",
+        "$uSee Also:$u deltrack listtrack addalert");
+
+"DELTRACK" ("/msg $O DELTRACK <nick>",
+        "Removes the given <nick> from the tracking list.",
+        "$uSee Also:$u deltrack listtrack");
+
+"LISTTRACK" ("/msg $O LISTTRACK",
+        "Lists all currently active tracks.",
+        "$uSee Also:$u addtrack deltrack");
+
